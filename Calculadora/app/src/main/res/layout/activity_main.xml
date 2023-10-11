@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="0"
+        android:textSize="24sp"
+        android:gravity="end"
+        android:focusable="false"
+        android:background="#DDDDDD"
+        android:inputType="none" />
+
+    <GridLayout
+        android:id="@+id/calculatorGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <!-- Numbers Row 1 -->
+        <Button
+            android:id="@+id/button1"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:text="3" />
+
+        <!-- Operator Row 1 -->
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_gravity="fill_horizontal"
+            android:text="+" />
+
+        <!-- Numbers Row 2 -->
+        <Button
+            android:id="@+id/button4"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button5"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/button6"
+            android:text="6" />
+
+        <!-- Operator Row 2 -->
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_gravity="fill_horizontal"
+            android:text="-" />
+
+        <!-- Numbers Row 3 -->
+        <Button
+            android:id="@+id/button7"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/button8"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/button9"
+            android:text="9" />
+
+        <!-- Operator Row 3 -->
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_gravity="fill_horizontal"
+            android:text="C" />
+
+        <!-- Number 0 -->
+        <Button
+            android:id="@+id/button0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:text="0" />
+
+        <!-- Operator Row 4 -->
+        <Button
+            android:id="@+id/buttonEquals"
+            android:layout_gravity="fill_horizontal"
+            android:text="=" />
+    </GridLayout>
+</LinearLayout>
