@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+        <!-- Columna de ImageView -->
+        <LinearLayout
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- ImageView para Name, Phonetic Name y Nickname -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/usuario" />
+
+            <ImageView
+                android:layout_width="132dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="8dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="8dp" />
+            <!-- ImageView para la imagen -->
+            <!-- ImageView para Phone -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/camara" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/telefono" />
+
+            <!-- ImageView para Email -->
+
+            <!-- ImageView vacío para alinear Spinner -->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/email" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- Columna de EditText y otros elementos -->
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- EditText para Name -->
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Nombre" />
+
+            <!-- EditText para Phonetic Name -->
+            <EditText
+                android:id="@+id/editTextPhoneticName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Phonetic Name" />
+
+            <!-- EditText para Nickname -->
+            <EditText
+                android:id="@+id/editTextNickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Apodo" />
+
+            <!-- LinearLayout para la imagen y el botón -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- EditText para la imagen -->
+
+                <!-- Botón para cambiar la foto -->
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="102dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/android" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cambiar Imagen" />
+            </LinearLayout>
+
+            <!-- EditText para Phone -->
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Teléfono"
+                android:inputType="phone" />
+
+            <!-- Dummy View para alinear el Spinner -->
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Spinner (a completar en prácticas posteriores) -->
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
